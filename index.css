@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  font-family: 'Roboto', sans-serif;
+  padding: 0 5%;
+  display: grid;
+  width: 100%;
+  grid-template-columns: auto 330px;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "header header" "section aside" "footer footer";
+  background: #F8F9F8;
+  grid-gap: 15px;
+}
+
+header {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background: white;
+}
+
+.navButtonDiv {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+
+.navButton {
+  padding: 5px 15px;
+  text-align: center;
+}
+
+.navButton .title {
+  font-size: 120%;
+  font-weight: 600;
+  color: #767676;
+}
+
+.navButton .details {
+  font-size: 90%;
+  color: #C4C4C4;
+}
+
+section {
+  grid-template-areas: "section";
+  background: #F8F9F8;
+}
+
+.post {
+  margin-bottom: 30px;
+  background: white;
+  padding: 20px;
+  border-top: 6px solid orange;
+}
+
+section .post img {
+  display: block;
+  width: 100%;
+}
+
+.post>div {
+  padding: 20px 0;
+}
+
+.post .title {
+  text-transform: capitalize;
+  font-size: 180%;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #444444;
+}
+
+.post .details {
+  text-transform: capitalize;
+  color: #AFAFAF;
+}
+
+.post .info {
+  border-top: 1px solid #C1BCB6;
+  border-bottom: 1px solid #C1BCB6;
+  color: #929292;
+}
+
+.post .readMore {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 0;
+  color: #C1BCB6;
+  text-transform: uppercase;
+}
+
+aside {
+  grid-area: aside;
+}
+
+aside .post {
+  padding: 15px;
+}
+
+.buttonDiv {
+  padding: 0 !important;
+  display: flex;
+  flex-wrap: wrap;
+  border: 2px solid #ECECEC;
+}
+
+.button {
+  width: 50%;
+  padding: 15px 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: grey;
+}
+
+.button:nth-child(2) {
+  border-left: 2px solid #ECECEC;
+  border-bottom: 2px solid #ECECEC;
+  background: #F0F1F1;
+}
+
+.buttonDiv .content {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 10px 5px;
+}
+
+.post span {
+  width: 25%;
+  margin-right: 10px;
+}
+
+.post input {
+  width: 75%;
+  height: 30px;
+  outline: 2px solid #F0F1F1;
+}
+
+.post .sponsor {
+  text-transform: uppercase;
+  font-size: 120%;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 0;
+  margin-bottom: 10px;
+  color: #444444;
+}
+
+.post .sponsorImage {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.sponsorImage img {
+  border: 2px solid #ECECEC;
+}
+
+.post .pageNumber {
+  padding: 0;
+  display: flex;
+}
+
+.number {
+  padding: 5px;
+  margin-right: 10px;
+  color: #A19FA0;
+}
+
+.number:first-child {
+  border-bottom: 1px solid #A19FA0;
+}
+
+footer {
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr auto;
+  grid-template-areas: "col col col" "foot foot foot";
+  grid-gap: 30px;
+  background: white;
+  padding: 30px 20px 15px 20px;
+  border-top: 6px solid orange;
+}
+
+.col .title {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 130%;
+  padding: 20px 0;
+  color: #444444;
+  border-bottom: 1px solid black;
+}
+
+.col .details {
+  padding: 20px 0;
+  color: #717171;
+}
+
+.col li {
+  margin-bottom: 8px;
+}
+
+.col li::before {
+  height: 5px;
+  width: 5px;
+  position: relative;
+  top: 7px;
+  margin-right: 5px;
+  content: url('images/arrowRight.png');
+  color: blue;
+  opacity:0.4;
+}
+
+.tagDiv {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tag {
+  padding: 3px 15px;
+  background: #E9E9E9;
+  border: 1px solid #919090;
+  border-left: 3px solid orange;
+  margin-right: 15px;
+  margin-bottom: 5px;
+  color: #717171;
+}
+
+.foot {
+  grid-area: foot;
+  display: flex;
+  justify-content: space-between;
+  font-size: 90%;
+  color: #A0A0A0;
+}
+
+.
